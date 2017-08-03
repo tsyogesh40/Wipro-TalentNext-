@@ -15,9 +15,9 @@ import java.util.*;
 		if(flag[j]==false)
 		  flag[j]=true;
 	}
-	void receive_a_rating()
+	void receive_a_rating(int n,int no)
 	{
-		
+		user_rating[n]=no;
 	}
 }
 class VideoStore extends Video
@@ -60,6 +60,7 @@ Video obj=new Video();
 	void receiveRating(int n, int no )
 	{
 		rate[n]=no;
+		receive_a_rating(n,no);
 	}
 	void listInventory()
 	{
